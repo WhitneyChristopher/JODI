@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 6px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+td:first-of-type {
+  border-left-color: transparent;
+  border-top-color: transparent;
+}
+td:nth-of-type(2) {
+  border-top-color: transparent;
+}
+td:nth-of-type(3) {
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+tr:nth-of-type(3) td {
+  border-bottom-color: transparent;
+}
+img {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+
+<script type="text/javascript" src="test.js"></script>
+<table style="width:100%">
+  <tr>
+    <td><img class="with-action" id="image1" src="https://ids.lib.harvard.edu/ids/iiif/18781940/328,314,87,89/full/0/native.jpg" onclick='toogle(this, ["https://ids.lib.harvard.edu/ids/iiif/43355528/102,108,274,274/full/0/native.jpg"]);'</td>
+    <td><img class="with-action" id="image2" src="https://ids.lib.harvard.edu/ids/iiif/43355528/102,108,274,274/full/0/native.jpg" onclick='toogle(this, ["https://ids.lib.harvard.edu/ids/iiif/17817398/113,168,63,47/full/0/native.jpg"]);'</td>
+    <td><img class="with-action" id="image3" src="https://ids.lib.harvard.edu/ids/iiif/18819256/95,77,822,820/full/0/native.jpg" onclick='toogle(this, ["https://ids.lib.harvard.edu/ids/iiif/17817374/325,328,69,72/full/0/native.jpg"]);'</td>
+  </tr>
+  <tr>
+    <td><img class="with-action" id="image1" name="image1" src="https://ids.lib.harvard.edu/ids/iiif/17817398/113,168,63,47/full/0/native.jpg" onclick='toogle(this, ["https://ids.lib.harvard.edu/ids/iiif/20863753/236,748,101,113/full/0/native.jpg"]);'</td>
+    <td><img class="with-action" id="image2" name="image2" src="https://ids.lib.harvard.edu/ids/iiif/18727371/192,107,657,671/full/0/native.jpg" onclick='toogle(this,["https://ids.lib.harvard.edu/ids/iiif/20864401/370,595,102,110/full/0/native.jpg "]);'</td>
+    <td><img class="with-action" id="image2" name="image3" src="https://ids.lib.harvard.edu/ids/iiif/43353979/103,117,263,249/full/0/native.jpg" onclick='toogle(this,["https://ids.lib.harvard.edu/ids/iiif/43344404/549,78,332,318/full/0/native.jpg"]);'</td>
+  </tr>
+  <tr>
+    <td><img class="with-action" id="image1" name="image2" src="https://ids.lib.harvard.edu/ids/iiif/43354079/558,94,315,305/full/0/native.jpg" onclick='toogle(this,["https://ids.lib.harvard.edu/ids/iiif/48524605/373,538,76,65/full/0/native.jpg"]);'</td>
+    <td><img class="with-action" id="image2" name="image2" src="https://ids.lib.harvard.edu/ids/iiif/17817374/325,328,69,72/full/0/native.jpg" onclick='toogle(this,["https://ids.lib.harvard.edu/ids/iiif/43344396/115,120,236,236/full/0/native.jpg"]);'</td>
+    <td><img class="with-action" id="image3" name="image2" src="https://ids.lib.harvard.edu/ids/iiif/43353995/520,56,385,374/full/0/native.jpg" onclick='toogle(this,["https://ids.lib.harvard.edu/ids/iiif/20863753/452,623,59,89/full/0/native.jpg"]);'</td>
+  </tr>
+</table>
+
+</body>
+</html>
